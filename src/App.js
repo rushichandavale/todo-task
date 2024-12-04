@@ -1,25 +1,21 @@
-import logo from './logo.svg';
-import './App.css';
+import React from "react";
+import HomePage from "./pages/HomePage";
 
-function App() {
+const App = () => {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
+    <div className="min-h-screen bg-gradient-to-br from-blue-100 to-blue-300 text-gray-800">
+      <header className="py-6">
+        <h1 className="text-center text-4xl font-extrabold text-blue-800">
+          Todo App
+        </h1>
       </header>
+      <main className="flex justify-center">
+        <div className="w-full max-w-4xl">
+          <HomePage />
+        </div>
+      </main>
     </div>
   );
-}
+};
 
 export default App;
